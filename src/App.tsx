@@ -1,11 +1,16 @@
 import './App.css';
+import Details from './components/Details';
+import Main from './components/Main';
+import { Route, Routes } from 'react-router-dom';
 
 const App = function() {
-
   return (
-    <div className='text-3xl text-blue-500 underline'>
-      <h1>hkasdfkasdf</h1>
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/details' element={<Details />} />
+      </Routes>
+    </>
   );
 };
 
